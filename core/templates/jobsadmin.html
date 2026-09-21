@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Job confirmation</title>
+    <style>
+      .container {
+        padding: 20px;
+        max-width: 520px;
+        margin: auto;
+      }
+      .bg-red {
+        background-color: #0f172a;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .img-wrapper {
+        width: 300px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .content p {
+        font-family: Helvetica;
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+      }
+      footer div {
+      }
+      .span1 {
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .span2 {
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* .container {
+        box-shadow: hsl(0, 0%, 80%) 0 0 5px;
+        border-radius: 5px;
+        width: 90vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+      }
+      .bg-red {
+        background: green;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px 5px 0 0;
+      }
+     
+      .heavy {
+        font-weight: 900;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-red">
+        <div class="img-wrapper">
+          <img src="https://c2constructionsecurityservices.co.uk/_nuxt/C2.3wrokQvX.png" alt="brand logo" />
+        </div>
+      </div>
+      <div class="content">
+        <p>Hey, a new applicant submitted via the <strong>jobs</strong> portal. Here are their details:</p>
+        <table style="width:100%;border-collapse:collapse;font-family:Helvetica;font-size:1rem;">
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;width:35%;">First Name</td>
+            <td style="padding:8px;">{{ first_name }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Last Name</td>
+            <td style="padding:8px;">{{ last_name }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Email</td>
+            <td style="padding:8px;">{{ email }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Phone</td>
+            <td style="padding:8px;">{{ phone }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">License Type</td>
+            <td style="padding:8px;">{{ license_type }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Address</td>
+            <td style="padding:8px;">{{ address1 }}{% if address2 %}, {{ address2 }}{% endif %}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">City / State</td>
+            <td style="padding:8px;">{{ city }}, {{ state }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Country</td>
+            <td style="padding:8px;">{{ country }}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #eee;">
+            <td style="padding:8px;font-weight:600;">Zip Code</td>
+            <td style="padding:8px;">{{ zip_code }}</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;font-weight:600;vertical-align:top;">Additional Info</td>
+            <td style="padding:8px;">{{ additional_info }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <span class="span1"> Follow us on social: </span>
+        <a
+          href="https://x.com/c2construc26800?s=20"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <span class="span2">
+            <i class="ri-twitter-x-fill"></i>
+          </span>
+        </a>
+        <a href="https://x.com/c2construc26800?s=20" title="Twitter"
+                                                               target="_blank"
+                                                               data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/&amp;source=gmail&amp;ust=1645911616854000&amp;usg=AOvVaw3ay0QZFuhF5GJBJGlLh_38">
+                                                                <img src="https://ci4.googleusercontent.com/proxy/NsjyopMzkdS_265e2kHl4IOf0uphoMKAXgsVbxz3XpbSyMcM3KEJoojxzbm--sV2RZs9yxlPyg4Lu0d6R3QNACMz3NkNriw4Dfszpj7MXnmn3X1SQGE=s0-d-e1-ft#https://x.com/c2construc26800?s=20"
+                                                                     alt="Twitter" title="Twitter" width="32"
+                                                                     style="outline:none;text-decoration:none;clear:both;display:block!important;border:none;height:auto;float:none;max-width:32px!important"
+                                                                     class="ri-twitter-x-fill">
+                                                            </a>
+      </div>
+    </footer>
+  </body>
+</html>
